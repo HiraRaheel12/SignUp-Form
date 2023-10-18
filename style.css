@@ -1,0 +1,186 @@
+:root{
+    --primary-font: 'TeXGyreAdventor', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2) url(assets/background.jpg);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .sub-container{
+    margin: 0 120px;
+    width: 100%;
+    border: 1px solid transparent;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.container .sub-container .section-1{
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-blend-mode: darken;
+}
+
+.container .sub-container .section-1 .section-1-content{
+    padding: 150px 50px;
+    font-family: var(--primary-font);
+}
+
+.container .sub-container .section-1 .section-1-content h1{
+    margin-bottom: 16px;
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 1px;
+}
+
+.container .sub-container .section-1 .section-1-content p:nth-of-type(1){
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.container .sub-container .section-1 .section-1-content p:nth-of-type(2){
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.container .sub-container .section-1 .section-1-content a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px 40px;
+    border: 1px solid white;
+    border-radius: 6px ;
+    transition: 0.3s ease-in;
+}
+
+.container .sub-container .section-1 .section-1-content a:hover{
+    background-color: rgb(62, 168, 119);
+    font-weight: bold;
+    transition: 0.3s ease-out;
+    border: 1px solid rgb(62, 168, 119);
+}
+
+.container .sub-container .section-2{
+    font-family: var(--primary-font);
+    width: 45%;
+    background-color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container .sub-container .section-2 .form-container{
+    padding: 35px 50px;
+}
+
+.container .sub-container .section-2 .form-control{
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 14px;
+}
+
+.container .sub-container .section-2 .form-container form label{
+    margin-bottom: 8px;
+    color: gray;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1.2px;
+}
+
+.container .sub-container .section-2 .form-container form input{
+    padding: 12px 0;
+    text-indent: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc; 
+    font-size: 14px;
+    outline: none;
+}
+
+.container .sub-container .section-2 .form-container form .form-control span{
+    font-size: 18px; 
+    color: #ccc; 
+    position: absolute;
+    right: 260px; 
+    line-height: 90px;
+    cursor: pointer;
+}
+
+.container .sub-container .section-2 .form-container form input:focus:invalid{
+    border: 2px solid red;
+}
+
+.container .sub-container .section-2 .form-container form input:valid{
+    border: 2px solid green;;
+}
+
+.container .sub-container .section-2 .form-container button{
+    width: 100%;
+    border: none;
+    background-color: rgb(62, 168, 119);
+    font-weight: bold;
+    transition: 0.3s ease-in;
+    color: white;
+    padding: 12px 0;
+    font-size: 16px;
+}
+
+.container .sub-container .section-2 .form-container button:hover{
+    transition: 0.3s ease-out;
+    background-color: rgb(25, 125, 78);
+}
+
+/* Error Messages */
+
+.container .sub-container .section-2 .form-control #alert{
+    color: gray;
+    font-weight: 100;
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.container .sub-container .section-2 .form-control #error_message{
+    color: red;
+    font-size: 14px;
+    margin-top: 2px;
+    display: none; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
